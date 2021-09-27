@@ -1,0 +1,64 @@
+.section1 {
+  background-color: #fff;
+  position: relative;
+  padding-left: 200px;
+  &:before {
+    content: '';
+    display: block;
+    background-color: $blue;
+    border-radius: 230px 0 0 230px;
+    position: absolute;
+    top: 29px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    display: block;
+    background-image: url(../img/sol-text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 29px;
+    bottom: 0;
+    left: 130px;
+    right: 0;
+    z-index: 2;
+  }
+  .wrapper {
+    max-width: 1075px;
+    min-height: 790px;
+    position: relative;
+    z-index: 3;
+  }
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(48, 105, 144, 0.8);
+    margin-bottom: 81px;
+  }
+  &__row {
+    display: flex;
+  }
+  &__text {
+    max-width: 660px;
+    font-size: 30px;
+    line-height: 1.5;
+    p {
+      margin-bottom: 74px;
+    }
+  }
+  &__img {
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+  &__sphere {
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    right: -72px;
+  }
+}

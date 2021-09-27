@@ -1,0 +1,19 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    margin-left: 40px;
+  }
+}
+
+.logo {
+  max-width: 180px;
+}

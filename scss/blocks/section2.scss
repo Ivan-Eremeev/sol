@@ -1,0 +1,72 @@
+.section2 {
+  padding: 70px 0 136px;
+  background-color: $blue;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 0 230px 0 230px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .wrapper {
+    max-width: 1480px;
+    position: relative;
+    z-index: 3;
+  }
+  .title {
+  }
+  &__row {
+    display: flex;
+  }
+  &__content {
+    max-width: 400px;
+    text-align: center;
+  }
+  &__num-big {
+    font-size: 288px;
+    line-height: 1;
+    font-weight: bold;
+    color: $blueT;
+  }
+  &__slogan {
+    font-size: 36px;
+    color: $blueT;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  &__list {
+    padding-top: 55px;
+  }
+  &__item {
+    max-width: 800px;
+    margin-bottom: 75px;
+    display: flex;
+    &:nth-child(2n) {
+      margin-left: 50px;
+    }
+    &:nth-child(3n) {
+      margin-left: 100px;
+    }
+  }
+  &__num {
+    font-size: 72px;
+    font-weight: bold;
+    color: $blueT;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 50px;
+    span {
+      display: block;
+      font-size: 21px;
+    }
+  }
+}

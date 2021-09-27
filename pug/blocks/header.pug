@@ -1,0 +1,30 @@
+// header
+header.header#header
+	.wrapper
+		.header__container
+
+			a(href="#").logo
+				img(src="img/logo.svg", alt="")
+
+			.header__col
+				// menu
+				//- .menu--left .menu--right
+				.js-menu.menu.menu--right
+					#menu-btn.menu__btn.hamburger.hamburger--squeeze
+						.hamburger-box
+							.hamburger-inner
+					nav.menu__nav
+						ul.menu__list
+							li
+								a(href="#") Наши продукты
+							li
+								a(href="#") Стать партнёром
+							li
+								a(href="#") О компании
+						#menu-close.menu__close
+					#menu-over.menu__over
+				// /menu
+			
+				a(href="#").btn.btn--transparent Оставить заявку
+
+// /header

@@ -1,0 +1,196 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page.page--gradient
+
+		include blocks/header.pug
+		
+		.content
+				
+			// welcome
+			section.welcome
+				.wrapper
+					.welcome__content 
+						h1.title ПЛАТФОРМА SOL
+						.welcome__text SOL («СУРДО-ОНЛАЙН») - платформа удаленного перевода на РЖЯ (русский жестовый язык) и обратно
+					.welcome__block 
+						a(href="#").welcome__yt 
+							img(src="img/yt-btn.svg", alt="")
+							a(href="#").btn.btn--brown Уже подключены
+			//	/welcome
+
+			// section1
+			section.section1
+				img(src="img/sphere_1.svg", alt="").section1__sphere
+				.wrapper
+					h2.section1__title МЫ РЕШАЕМ
+					.section1__row
+						.section1__text
+							p Язык глухого клиента – это жестовый язык. Он отличается от устного и письменного языка слышащего человека. 
+							p Именно поэтому глухие люди испытывают трудности в общении со слышащими людьми через письмо, и наоборот, слышащим людям сложно понимать специфический порядок слов, в котором пишут глухие.
+						.section1__img 
+							img(src="img/man.png", alt="")
+			// /section1
+
+			// section2
+			section.section2
+				.wrapper
+					h2.title.title--center В ЦИФРАХ
+					.section2__row
+						.section2__content 
+							.section2__num-big 1 
+							.section2__slogan КЛИЕНТ <br>С ИВАЛИДНОСТЬЮ
+							.section2__text приносит точно такой же доход, как и клиент без инвалидности
+						.section2__list
+							.section2__item 
+								.section2__num 40
+									span ЧАСОВ
+								.section2__text в год глухой может получить от ФСС для собственных нужд, это не более 15 посещений учреждение в год.
+							.section2__item 
+								.section2__num 1 500
+									span РУБЛЕЙ
+								.section2__text средняя стоимость часа коммерческого сурдоперевода, поминутно его не предлагают.
+							.section2__item 
+								.section2__num 500 000
+									span ГЛУХИХ
+								.section2__text насчитывается в России и СНГ. Это самые скромные оценки. Слабослышащих в 10 раз больше.
+			// /section2
+
+			// section3
+			section.section3
+				img(src="img/sphere_2.svg", alt="").section3__sphere
+				.wrapper
+					h2.title.title--center SOL ДЛЯ ВАШЕЙ ОРГАНИЗАЦИИ
+					.row 
+						.section3__col 
+							.section3__item 
+								.section3__num 1
+								h3.section3__title Обеспечение доступной среды
+								.section3__text Обеспечивает доступность к объектам для глухих и слабослышащих согласно 181-ФЗ
+						.section3__col 
+							.section3__item 
+								.section3__num 2
+								h3.section3__title Поддержка стационарных и мобильных устройств
+								.section3__text Готовые приложения для iOS и Android. Работа на любом устройстве  через браузер. 
+						.section3__col 
+							.section3__item 
+								.section3__num 3
+								h3.section3__title Сертификация
+								.section3__text Соответствует критериям обеспечения безбарьерной среды для инвалидов и других маломобильных групп населения.
+						.section3__col 
+							.section3__item 
+								.section3__num 4
+								h3.section3__title Поминутная тарификация
+								.section3__text Каждый перевод тарифицируется поминутно
+						.section3__col 
+							.section3__item 
+								.section3__num 5
+								h3.section3__title Режим работы
+								.section3__text Сервис доступен 24/7. Время ожидания переводчика до 3 мин.
+
+						.section3__col 
+							.section3__item 
+								.section3__num 6
+								h3.section3__title Простота развертывания и использования
+								.section3__text Система не требует специальных навыков для настройки и использования.
+			// /section3
+
+			// section4
+			section.section4
+				.wrapper
+					h2.title.title--center ГДЕ ВОСТРЕБОВАНЫ НАШИ РЕШЕНИЯ
+					.row 
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/house.svg", alt="")
+								.section4__content 
+									h3.section4__title ГОСУЧЕРЕЖДЕНИЯ
+									ul.section4__list 
+										li Службы социальной защиты и страхования 
+										li Службы занятости
+										li Объекты социального обслуживания
+										li Объекты предоставления госуслуг (МФЦ)
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/train.svg", alt="")
+								.section4__content 
+									h3.section4__title ТРАНСПОРТНРЫЕ ОБЪЕКТЫ
+									ul.section4__list 
+										li метро, городской транспорт, такси, автобусные и железнодорожные  вокзалы, аэропорты
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/medicine.svg", alt="")
+								.section4__content 
+									h3.section4__title УЧРЕЖДЕНИЯ ЗДРАВООХРАНЕНИЯ
+									ul.section4__list 
+										li поликлиники, диагностические центры, аптеки, больницы,  пансионаты, санатории
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/cup.svg", alt="")
+								.section4__content 
+									h3.section4__title УЧРЕЖДЕНИЯ КУЛЬТУРЫ И ОБРАЗОВАНИЯ
+									ul.section4__list 
+										li школы, институты ,  интернаты, дома творчества, 
+										li музеи, театры, библиотеки, концертные залы, выставочные залы 
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/money.svg", alt="")
+								.section4__content 
+									h3.section4__title ФИНАНСОВО-КРЕДИТНЫЕ ОРГАНИЗАЦИИ
+									ul.section4__list 
+										li Банки, страховые компании
+										li Объекты торговли и общественного питания 
+										li Торговые центры, супермаркеты, магазины
+										li Рестораны, кафе, столовые
+						.section4__col 
+							.section4__item 
+								.section4__icon 
+									img(src="img/money.svg", alt="")
+								.section4__content 
+									h3.section4__title ФИНАНСОВО-КРЕДИТНЫЕ ОРГАНИЗАЦИИ
+									ul.section4__list 
+										li Банки, страховые компании
+										li Объекты торговли и общественного питания 
+										li Торговые центры, супермаркеты, магазины
+										li Рестораны, кафе, столовые
+			// /section4
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

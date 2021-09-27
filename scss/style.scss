@@ -1,0 +1,70 @@
+@import 'mixins';
+
+@include reset(); // Сброс стилей
+
+@import 'mixingrid';
+
+// Переменные для кастомизации Mixingrid
+$columns: 12; // Колличество колонок
+$max-width: 1140px; // Максимальная ширина контейнера
+$gutter: 20px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке
+// Брэйкпоинты
+$break_xl: 1400px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 769px;
+$break_xs: 500px;
+
+// // Переменные для кастомизации Bootstrap 5
+// $grid-gutter-width: 15px; // Отступы между колонками
+// $grid-columns: 12; // Колличество колонок
+// $grid-breakpoints: ( // Брейкпоинты
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// ) !default;
+// $container-max-widths: ( // Максимальная ширина контейнера
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+// ) !default;
+// $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
+
+// @import 'bootstrap/bootstrap'; // Подключение бутстрап
+
+// Шрифты
+@include font-face("Arial", "../fonts/arial/ArialMT", normal, normal);
+@include font-face("Arial", "../fonts/arial/Arial-BoldMT", bold, normal);
+@include font-face("Arial", "../fonts/arial/Arial-Black", 900, normal);
+
+@include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-regular", normal, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-900", 900, normal);
+
+// Цвета
+$black: #353535;
+$blue: #7AC3ED;
+$blueL: #97CFEE;
+$blueD: #56A9DE;
+$blueT: #306990;
+
+// Подключение файлов
+@import 'blocks/settings';
+@import 'hamburgers/hamburgers';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/welcome';
+@import 'blocks/section1';
+@import 'blocks/section2';
+@import 'blocks/section3';
+@import 'blocks/section4';
+// @import 'blocks/accordion';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';
+// @import 'blocks/tabs';

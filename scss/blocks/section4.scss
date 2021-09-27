@@ -1,0 +1,48 @@
+.section4 {
+  padding: 35px 0;
+  .wrapper {
+    max-width: 1400px;
+  }
+  .title {
+    margin-bottom: 74px;
+  }
+  &__col {
+    @include col(6);
+    margin-bottom: 76px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__icon {
+    width: 150px;
+    margin-right: 36px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  &__content {
+    
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__list {
+    line-height: 1.5;
+    li {
+      padding-left: 20px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: $black;
+        position: absolute;
+        top: 13px;
+        left: 0;
+      }
+    }
+  }
+}

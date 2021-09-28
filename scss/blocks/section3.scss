@@ -72,5 +72,9 @@
     &:before {
       border-radius: 0 70px 70px 0;
     }
+    &__sphere {
+      top:auto;
+      bottom: -50px;
+    }
   }
 }

@@ -1045,10 +1045,15 @@ body.lock {
   .section3:before {
     border-radius: 0 70px 70px 0;
   }
+  .section3__sphere {
+    top: auto;
+    bottom: -50px;
+  }
 }
 
 .section4 {
   padding: 35px 0;
+  position: relative;
 }
 .section4 .wrapper {
   max-width: 1400px;
@@ -1101,6 +1106,24 @@ body.lock {
   position: absolute;
   top: 13px;
   left: 0;
+}
+.section4__sphere-1 {
+  position: absolute;
+  z-index: 2;
+  left: -100px;
+  bottom: -50px;
+}
+.section4__sphere-2 {
+  max-width: 730px;
+  position: absolute;
+  z-index: 2;
+  right: -100px;
+  bottom: -100px;
+}
+@media (max-width: 1400px) {
+  .section4__sphere-1 {
+    display: none;
+  }
 }
 @media (max-width: 1200px) {
   .section4__title {

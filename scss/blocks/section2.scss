@@ -110,6 +110,9 @@
     &__item {
       margin-bottom: 40px;
     }
+    &__text {
+      font-size: 18px;
+    }
   }
   @media (max-width: $break_xs) {
     &__item {
@@ -122,6 +125,7 @@
     }
     &__num {
       margin-right: 0;
+      margin-bottom: 26px;
     }
     &__num-big {
       font-size: 40px;

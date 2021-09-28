@@ -64,6 +64,11 @@
       }
     }
   }
+  @media (max-width: $break_sm) {
+    &__title {
+      font-size: 18px;
+    }
+  }
   @media (max-width: $break_xs) {
     .title {
       margin-bottom: 50px;

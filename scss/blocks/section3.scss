@@ -29,6 +29,8 @@
   }
   &__col {
     @include col(4);
+    @include col-sm(6);
+    @include col-xs(12);
     margin-bottom: $gutter;
     &:nth-child(2n) {
       .section3__item {
@@ -60,5 +62,15 @@
   }
   &__text {
     line-height: 1.5;
+  }
+  @media (max-width: $break_lg) {
+    &__num {
+      font-size: 60px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &:before {
+      border-radius: 0 70px 70px 0;
+    }
   }
 }

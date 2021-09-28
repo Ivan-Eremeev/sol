@@ -2,12 +2,15 @@
   padding: 35px 0;
   .wrapper {
     max-width: 1400px;
+    position: relative;
+    z-index: 3;
   }
   .title {
     margin-bottom: 74px;
   }
   &__col {
     @include col(6);
+    @include col-sm(12);
     margin-bottom: 76px;
   }
   &__item {
@@ -43,6 +46,41 @@
         top: 13px;
         left: 0;
       }
+    }
+  }
+  @media (max-width: $break_lg) {
+    &__title {
+      font-size: 20px;
+    }
+    &__icon {
+      width: 100px;
+      img {
+        width: 60px;
+      }
+      &--big {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    .title {
+      margin-bottom: 50px;
+    }
+    &__item {
+      flex-wrap: wrap;
+    }
+    &__icon {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__col {
+      margin-bottom: 40px;
     }
   }
 }

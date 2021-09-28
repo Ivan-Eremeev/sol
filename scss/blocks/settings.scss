@@ -23,6 +23,9 @@ body {
   &.lock {
     position: fixed;
   }
+  @media (max-width: $break_lg) {
+    font-size: 16px;
+  }
 }
 .mobile-hide {
   @media (max-width: $break_sm) {
@@ -61,6 +64,8 @@ body {
 }
 .wrapper {
   @include wrapper();
+  position: relative;
+  z-index: 3;
 }
 *:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #fff !important;
@@ -92,6 +97,8 @@ body {
   outline: none;
   border: none;
   background-color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
   &--transparent {
     color: #B3624B;
     border: 1px solid #B3624B;
@@ -107,15 +114,25 @@ body {
       background-color: #EC5E39;
     }
   }
+  @media (max-width: $break_lg) {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
 }
 .title {
   font-weight: bold;
   font-size: 55px;
-  line-height: 66px;
+  line-height: 1.2;
   color: #353535;
   text-transform: uppercase;
   &--center {
     text-align: center;
+  }
+  @media (max-width: $break_lg) {
+    font-size: 30px;
+  }
+  @media (max-width: $break_xs) {
+    font-size: 24px;
   }
 }
 /* /settings */

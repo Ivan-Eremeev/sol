@@ -42,8 +42,10 @@ $(document).ready(function () {
 				close.on('click', menuClose);
 				function menuOpen() { // Открывание меню
 					body.addClass('lock').css('padding-right', scrollbarWidth);
-					$this.addClass('open');
 					menuBtn.addClass('is-active');
+					setTimeout(() => {
+						$this.addClass('open');
+					}, 200);
 				}
 				function menuClose() { // Закрывание меню
 					body.removeClass('lock').css('padding-right', 0);

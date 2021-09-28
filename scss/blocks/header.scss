@@ -1,4 +1,7 @@
 .header {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -12,8 +15,19 @@
   .btn {
     margin-left: 40px;
   }
+  @media (max-width: $break_md) {
+    .btn {
+      display: none;
+    }
+    &__container {
+      padding: 15px 0;
+    }
+  }
 }
 
 .logo {
   max-width: 180px;
+  @media (max-width: $break_lg) {
+    max-width: 120px;
+  }
 }

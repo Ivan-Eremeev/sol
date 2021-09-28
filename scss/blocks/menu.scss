@@ -13,25 +13,27 @@
 		}
 		a {
 			display: block;
+			padding: 5px 0;
 			color: #5F5F5F;
 			&:hover {
-				color: #B3624B;
+				color: $blueT;
 			}
 		}
 	}
 	&__btn {
 		display: none;
 	}
-	@media (max-width: $break_sm) {
+	@media (max-width: $break_md) {
 		&__nav {
 			width: 100%;
 			max-width: 600px;
-			padding: 20px;
+			padding: 50px 20px;
 			background-color: #fff;
 			position: fixed;
 			top: 0;
 			bottom: 0;
 			overflow-y: auto;
+			z-index: 10;
 		}
 		&__list {
 			display: block;
@@ -40,12 +42,45 @@
 			}
 			a {
 				margin: 0;
+				color: $black;
 			}
 		}
 		&__btn {
 			display: inline-block;
 		}
-
+		&__over {
+			display: none;
+			background-color: rgba(0,0,0,.5);
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 9;
+		}
+		&__close {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			&:after,&:before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 3px;
+				background-color: $black;
+				position: absolute;
+				top: 50%;
+			 	left: 50%;
+			}
+			&:after {
+				transform: translate(-50%,-50%) rotate(45deg);
+			}
+			&:before {
+				transform: translate(-50%,-50%) rotate(-45deg);
+			}
+		}
 		&--left {
 			.menu__nav {
 				left: -800px;
@@ -53,6 +88,9 @@
 			&.open {
 				.menu__nav {
 					left: 0;
+				}
+				.menu__over {
+					display: block;
 				}
 			}
 		}
@@ -63,6 +101,9 @@
 			&.open {
 				.menu__nav {
 					right: 0;
+				}
+				.menu__over {
+					display: block;
 				}
 			}
 		}

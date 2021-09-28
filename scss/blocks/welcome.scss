@@ -1,9 +1,13 @@
 .welcome {
+  background: url(../img/welcome-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-color: #fff;
   .wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 62px;
-    min-height: 824px;
+    padding-top: 212px;
+    padding-bottom: 28%;
   }
   &__content {
     max-width: 650px;
@@ -28,5 +32,33 @@
   }
   .btn {
 
+  }
+  @media (max-width: $break_lg) {
+    &__content {
+      max-width: 520px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__block {
+      margin-right: 60px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    background: linear-gradient(to bottom, #EAE9E7, #fff 70%);
+    .wrapper {
+      flex-wrap: wrap;
+      padding-top: 120px;
+      padding-bottom: 70px;
+    }
+    &__content {
+      margin-left: 0;
+      margin-bottom: 80px;
+    }
+    &__block {
+      width: 100%;
+      margin-right: 0;
+      padding-left: 0;
+    }
   }
 }

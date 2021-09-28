@@ -85,6 +85,9 @@ body {
 }
 .content {
   flex-grow: 1;
+  &--pt {
+    padding-top: 150px;
+  }
 }
 .btn {
   display: inline-block;

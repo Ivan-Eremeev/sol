@@ -258,6 +258,9 @@ body.lock {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+.content--pt {
+  padding-top: 150px;
+}
 
 .btn {
   display: inline-block;

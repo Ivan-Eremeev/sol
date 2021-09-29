@@ -10,7 +10,7 @@ block style-libs
 	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
-	//- link(rel="stylesheet", href="css/libs/slick.css")
+	link(rel="stylesheet", href="css/libs/slick.css")
 	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
 	//- link(rel="stylesheet", href="css/libs/aos.css")
 
@@ -199,13 +199,48 @@ block content
 									p.section5__text Перевод онлайн и офлайн мероприятий на русский жестовый язык
 									a(href="#").btn.btn--brown Оставить заявку
 			//	/section5
+
+			// section6
+			section.section6
+				img(src="img/sphere_3.svg", alt="").section6__sphere-1
+				img(src="img/sphere_3.svg", alt="").section6__sphere-2
+				.wrapper
+					h2.title.title--center СПОСОБ ИСПОЛЬЗОВАНИЯ
+					.section6__row
+						.section6__item 
+							.section6__icon 
+								img(src="img/terminal.svg", alt="")
+							h3.section6__title ОФИСНЫЙ <br>ТЕРМИНАЛ
+						.section6__item 
+							.section6__icon 
+								img(src="img/gajet.svg", alt="")
+							h3.section6__title МОБИЛЬНОЕ <br>УСТРОЙСТВО
+						.section6__item 
+							.section6__icon 
+								img(src="img/webservice.svg", alt="")
+							h3.section6__title ВЕБСЕРВИС
+			// /section6
+
+			// section7
+			section.section7
+				.wrapper
+					h2.title.title--center НАМ ДОВЕРЯЮТ
+					.section7__slider 
+						#slickSlider
+							img(src="img/partner_1.png", alt="")
+							img(src="img/partner_2.png", alt="")
+							img(src="img/partner_3.png", alt="")
+							img(src="img/partner_1.png", alt="")
+							img(src="img/partner_2.png", alt="")
+							img(src="img/partner_3.png", alt="")
+			// /section7
 			
 		include blocks/footer.pug
 
 block js-libs
 	script(src="js/libs/jquery.min.js")
 	//- script(src="js/libs/jquery.fancybox.min.js")
-	//- script(src="js/libs/slick.min.js")
+	script(src="js/libs/slick.min.js")
 	script(src="js/libs/jquery.matchHeight-min.js")
 	//- script(src="js/libs/jquery.inputmask.min.js")
 	//- script(src="js/libs/autosize.min.js")

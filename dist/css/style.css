@@ -1687,3 +1687,225 @@ body.lock {
     margin-bottom: 45px;
   }
 }
+
+.section6 {
+  padding: 100px 0 65px;
+  position: relative;
+}
+.section6 .wrapper {
+  max-width: 950px;
+}
+.section6 .title {
+  margin-bottom: 85px;
+}
+.section6__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  transform: translate(100px, 0);
+}
+.section6__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.section6__icon {
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.section6__title {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.section6__sphere-1 {
+  max-width: 865px;
+  position: absolute;
+  z-index: 2;
+  left: -195px;
+  bottom: -113px;
+}
+.section6__sphere-2 {
+  max-width: 802px;
+  position: absolute;
+  z-index: 2;
+  right: -100px;
+  bottom: -200px;
+}
+@media (max-width: 1250px) {
+  .section6__title {
+    font-size: 22px;
+  }
+  .section6__icon {
+    max-width: 70px;
+  }
+  .section6__sphere-1 {
+    max-width: 550px;
+  }
+  .section6__sphere-2 {
+    max-width: 500px;
+  }
+}
+@media (max-width: 769px) {
+  .section6__row {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .section6__item {
+    display: block;
+    text-align: center;
+  }
+  .section6__icon {
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
+  }
+  .section6__icon img {
+    max-height: 100%;
+  }
+  .section6__sphere-1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .section6 {
+    padding: 50px 0 20px;
+  }
+  .section6 .title {
+    margin-bottom: 30px;
+  }
+  .section6__item {
+    width: 100%;
+  }
+  .section6__icon {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .section6__title {
+    font-size: 20px;
+  }
+}
+
+.section7 {
+  padding: 30px 0;
+  position: relative;
+  z-index: 3;
+}
+.section7:before {
+  content: "";
+  display: block;
+  background-color: #7AC3ED;
+  border-radius: 230px 0 0 230px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.section7 .wrapper {
+  max-width: 1150px;
+}
+.section7 .title {
+  margin-bottom: 20px;
+}
+.section7__slider {
+  padding: 0 40px;
+}
+.section7 .slick-slide {
+  margin-left: 80px;
+}
+.section7 .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -40px;
+}
+.section7__prev {
+  padding: 10px;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 2;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section7__prev svg {
+  stroke: #306990;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.section7__prev:hover svg {
+  stroke: #353535;
+}
+.section7__next {
+  padding: 10px;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 2;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section7__next svg {
+  stroke: #306990;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.section7__next:hover svg {
+  stroke: #353535;
+}
+@media (max-width: 1024px) {
+  .section7 .slick-slide {
+    margin-left: 40px;
+  }
+  .section7 .slick-track {
+    margin-left: -20px;
+  }
+}
+@media (max-width: 769px) {
+  .section7 .slick-slide {
+    margin-left: 20px;
+  }
+  .section7 .slick-track {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 500px) {
+  .section7__prev svg {
+    width: 14px;
+  }
+  .section7__next svg {
+    width: 14px;
+  }
+}

@@ -7,14 +7,14 @@ $(document).ready(function () {
 
 	// Брэйкпоинты js
 	var	breakXl = 1400,
-			breakLg = 1200,
-			breakMd = 1025,
+			breakLg = 1250,
+			breakMd = 1024,
 			breakSm = 769,
 			breakXs = 500;
 	
 	// Подключение настроек плагинов. Использовать "//=" перед строкой пути
 	// libs-settings/fancybox_settings.js
-	// libs-settings/slick_settings.js
+	//= libs-settings/slick_settings.js
 	// libs-settings/fullpage_settings.js
 	// libs-settings/tinyscrollbar-settings.js
 	// libs-settings/tooltipster-settings.js

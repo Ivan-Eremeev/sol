@@ -1,0 +1,95 @@
+.section6 {
+  padding: 100px 0 65px;
+  position: relative;
+  .wrapper {
+    max-width: 950px;
+  }
+  .title {
+    margin-bottom: 85px;
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translate(100px,0);
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  &__icon {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  &__sphere-1 {
+    max-width: 865px;
+    position: absolute;
+    z-index: 2;
+    left: -195px;
+    bottom: -113px;
+
+  }
+  &__sphere-2 {
+    max-width: 802px;
+    position: absolute;
+    z-index: 2;
+    right: -100px;
+    bottom: -200px;
+  }
+  @media (max-width: $break_lg) {
+    &__title {
+      font-size: 22px;
+    }
+    &__icon {
+      max-width: 70px;
+    }
+    &__sphere-1 {
+      max-width: 550px;
+    }
+    &__sphere-2 {
+      max-width: 500px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__row {
+      transform: translate(0,0);
+    }
+    &__item {
+      display: block;
+      text-align: center;
+    }
+    &__icon {
+      margin-left: auto;
+      margin-right: auto;
+      height: 130px;
+      img {
+        max-height: 100%;
+      }
+    }
+    &__sphere-1 {
+      display: none;
+    }
+  }
+  @media (max-width: $break_xs) {
+    padding: 50px 0 20px;
+    .title {
+      margin-bottom: 30px;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__icon {
+      height: auto;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

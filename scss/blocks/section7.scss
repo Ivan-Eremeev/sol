@@ -1,0 +1,100 @@
+.section7 {
+  padding: 30px 0;
+  position: relative;
+  z-index: 3;
+  &:before {
+    content: '';
+    display: block;
+    background-color: $blue;
+    border-radius: 230px 0 0 230px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .wrapper {
+    max-width: 1150px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  &__slider {
+    padding: 0 40px;
+  }
+  .slick-slide {
+    margin-left: 80px;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+  }
+  &__prev {
+    padding: 10px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    svg {
+      stroke: #306990;
+      transition: 0.3s;
+    }
+    &:hover {
+      svg {
+        stroke: $black;
+      }
+    }
+  }
+  &__next {
+    padding: 10px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    svg {
+      stroke: #306990;
+      transition: 0.3s;
+    }
+    &:hover {
+      svg {
+        stroke: $black;
+      }
+    }
+  }
+  @media (max-width: $break_md) {
+    .slick-slide {
+      margin-left: 40px;
+    }
+    .slick-track {
+      margin-left: -20px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    .slick-slide {
+      margin-left: 20px;
+    }
+    .slick-track {
+      margin-left: -10px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__prev {
+      svg {
+        width: 14px;
+      }
+    }
+    &__next {
+      svg {
+        width: 14px;
+      }
+    }
+  }
+}

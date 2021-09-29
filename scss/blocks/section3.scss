@@ -1,5 +1,5 @@
 .section3 {
-  padding: 22px 0 72px;
+  padding: 22px 0 62px;
   background-color: #fff;
   position: relative;
   &:before {
@@ -75,6 +75,11 @@
     &__sphere {
       top:auto;
       bottom: -50px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__item {
+      border-radius: 30px;
     }
   }
 }

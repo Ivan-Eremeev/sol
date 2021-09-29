@@ -80,6 +80,11 @@ $(document).ready(function () {
 			byRow: false,
 		});
 	}
+	if ($('.section5__title').length) {
+		$('.section5__title').matchHeight({
+			byRow: false,
+		});
+	}
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {

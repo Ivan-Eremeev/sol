@@ -1,5 +1,5 @@
 .section4 {
-  padding: 35px 0;
+  padding: 35px 0 0;
   position: relative;
   .wrapper {
     max-width: 1400px;
@@ -12,7 +12,7 @@
   &__col {
     @include col(6);
     @include col-sm(12);
-    margin-bottom: 76px;
+    margin-bottom: 55px;
   }
   &__item {
     display: flex;
@@ -20,6 +20,7 @@
   &__icon {
     width: 150px;
     margin-right: 36px;
+    margin-top: 20px;
     text-align: center;
     flex-shrink: 0;
   }

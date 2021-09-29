@@ -1,0 +1,116 @@
+.section5 {
+  margin-top: -10px;
+  .wrapper {
+    max-width: 1680px;
+    padding: 30px $offset 10px;
+    background-color: $blue;
+    border-radius: 350px;
+  }
+  &__container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+  .row {
+    margin-left: -45px;
+    padding-top: 45px;
+  }
+  &__col {
+    @include col(4);
+    @include col-sm(12);
+    padding-left: 45px;
+    margin-bottom: 45px;
+    &:hover {
+      .section5__item {
+        background-color: #fff;
+        transform: translate(0, -45px);
+        .btn {
+          background-color: #EC5E39;
+        }
+      }
+    }
+  }
+  &__item { 
+    height: 100%;
+    padding: 25px 35px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $blueL;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 1.2;
+    flex-grow: 1;
+    margin-bottom: 87px;
+  }
+  .btn {
+    transition: 0.5s;
+  }
+  @media (max-width: $break_xl) {
+    .wrapper {
+      border-radius: 200px;
+    }
+  }
+  @media (max-width: $break_lg) {
+    .wrapper {
+      border-radius: 100px;
+    }
+    .row {
+      margin-left: $gutter * -1;
+    }
+    &__col {
+      padding-left: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
+  @media (max-width: $break_lg) {
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    margin-top: 0;
+    .wrapper {
+      border-radius: 50px;
+    }
+    .row {
+      padding-top: 0;
+    }
+    &__col {
+      &:hover {
+        .section5__item {
+          transform: translate(0,0);
+        }
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__item {
+      border-radius: 30px;
+    }
+    &__text {
+      margin-bottom: 45px;
+    }
+  }
+}

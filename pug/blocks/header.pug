@@ -15,8 +15,17 @@ header.header#header
 							.hamburger-inner
 					nav.menu__nav
 						ul.menu__list
-							li
+							li.menu__child
 								a(href="#") Наши продукты
+								ul.menu__sublist 
+									li
+										a(href="#") Лицензионная подписка на SOL
+									li
+										a(href="#") Виджет обратного звонка
+										<svg width="71" height="36" viewBox="0 0 71 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M35.2158 35.2161L35.2158 0C35.2158 19.4493 19.4491 35.2161 -0.000230421 35.2161L35.2158 35.2161Z" fill="#97CFEE"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M35.2156 35.2161L70.4316 35.2161C50.9824 35.2161 35.2156 19.4493 35.2156 1.21801e-05L35.2156 35.2161Z" fill="#97CFEE"/>
+										</svg>
 							li
 								a(href="#") Стать партнёром
 							li
@@ -25,6 +34,46 @@ header.header#header
 					#menu-over.menu__over
 				// /menu
 			
-				a(href="#").btn.btn--transparent Оставить заявку
+				a(href="#").btn.btn--transparent.modal-trigger(data-modal="#modalCallback").tablet-hide Оставить заявку
+
+				// modal callback
+				.callback.modal#modalCallback
+					.callback__body.modal_body
+						.callback__content.modal_content
+							.callback__title Заполните форму <br>для обратной связи
+							form(action="#").callback__form
+								.callback__row 
+									.input.input-search
+										input#inptype(type="text" placeholder="Юр./Физ. лицо")
+										.input__drop
+											ul.input__list.scrollbar-inner
+												each val in ['Юр. лицо', 'Физ. лицо']
+													li= val
+										label(for="inptype").input__arrow 
+											<svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2 2L22 22L42 2" stroke-width="4"/>
+											</svg>
+								.callback__row 
+									.input 
+										input(type="text" placeholder="Название компании")
+								.callback__row 
+									.input 
+										input(type="text" placeholder="Ваше имя")
+								.callback__row 
+									.input 
+										input(type="text" placeholder="Город/Регион")
+								.callback__row 
+									.input 
+										input(type="text" placeholder="Телефон")
+								.callback__row.callback__row--mb52
+									.input 
+										input(type="text" placeholder="Email")
+								.callback__row
+									.textarea 
+										textarea(placeholder="Задать вопрос")
+								.callback__btn 
+									button(type="submit").btn.btn--brown Оставить заявку
+							//- .callback__close.modal_close
+				// /modal callback
 
 // /header

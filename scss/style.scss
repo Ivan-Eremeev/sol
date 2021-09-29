@@ -12,7 +12,7 @@ $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
 $break_xl: 1400px;
-$break_lg: 1200px;
+$break_lg: 1250px;
 $break_md: 1024px;
 $break_sm: 769px;
 $break_xs: 500px;
@@ -44,6 +44,9 @@ $break_xs: 500px;
 @include font-face("Arial", "../fonts/arial/Arial-BoldMT", bold, normal);
 @include font-face("Arial", "../fonts/arial/Arial-Black", 900, normal);
 
+@include font-face("ArialRoundedMTProCyr", "../fonts/ArialRoundedMTProCyr/ArialRoundedMTProCyr", normal, normal);
+@include font-face("ArialRoundedMTProCyr", "../fonts/ArialRoundedMTProCyr/ArialRoundedMTProCyrBold", bold, normal);
+
 @include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-regular", normal, normal);
 @include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-900", 900, normal);
 
@@ -59,12 +62,13 @@ $blueT: #306990;
 @import 'hamburgers/hamburgers';
 @import 'blocks/header';
 @import 'blocks/menu';
+@import 'blocks/modal';
+@import 'blocks/callback';
 @import 'blocks/welcome';
 @import 'blocks/section1';
 @import 'blocks/section2';
 @import 'blocks/section3';
 @import 'blocks/section4';
 // @import 'blocks/accordion';
-// @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';

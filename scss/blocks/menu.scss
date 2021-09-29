@@ -8,12 +8,12 @@
 		justify-content: center;
 		align-items: center;
 		margin-left: -40px;
-		li {
+		> li {
 			margin-left: 40px;
 		}
 		a {
 			display: block;
-			padding: 5px 0;
+			padding: 40px 0;
 			color: #5F5F5F;
 			&:hover {
 				color: $blueT;
@@ -22,6 +22,45 @@
 	}
 	&__btn {
 		display: none;
+	}
+	&__child {
+		&:hover {
+			> a {
+				color: $blueT;
+			}
+			.menu__sublist {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&__sublist {
+		padding: 28px;
+		background-color: #97CFEE;
+		border-radius: 20px;
+		position: absolute;
+		white-space: nowrap;
+		position: absolute;
+		top: calc(100%);
+		left: 0;
+		z-index: 5;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.1s;
+		li {
+			
+		}
+		a {
+			padding: 5px 0;
+			&:hover {
+				color: $black;
+			}
+		}
+		svg {
+			position: absolute;
+			bottom: calc(100% - 2px);
+			left: 10px;
+		}
 	}
 	@media (max-width: $break_md) {
 		&__nav {
@@ -41,9 +80,17 @@
 
 			}
 			a {
+				padding: 5px 0;
 				margin: 0;
 				color: $black;
 			}
+		}
+		&__sublist {
+			padding: 0 10px;
+			position: static;
+			visibility: visible;
+			opacity: 1;
+			background-color: #fff;
 		}
 		&__btn {
 			display: inline-block;

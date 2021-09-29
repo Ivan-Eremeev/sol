@@ -24,7 +24,16 @@
 								</div>
 								<nav class="menu__nav">
 									<ul class="menu__list">
-										<li><a href="#">Наши продукты</a></li>
+										<li class="menu__child"><a href="#">Наши продукты</a>
+											<ul class="menu__sublist"> 
+												<li><a href="#">Лицензионная подписка на SOL</a></li>
+												<li><a href="#">Виджет обратного звонка</a><svg width="71" height="36" viewBox="0 0 71 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.2158 35.2161L35.2158 0C35.2158 19.4493 19.4491 35.2161 -0.000230421 35.2161L35.2158 35.2161Z" fill="#97CFEE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.2156 35.2161L70.4316 35.2161C50.9824 35.2161 35.2156 19.4493 35.2156 1.21801e-05L35.2156 35.2161Z" fill="#97CFEE"/>
+</svg>
+												</li>
+											</ul>
+										</li>
 										<li><a href="#">Стать партнёром</a></li>
 										<li><a href="#">О компании</a></li>
 									</ul>
@@ -32,7 +41,67 @@
 								</nav>
 								<div class="menu__over" id="menu-over"></div>
 							</div>
-							<!-- /menu--><a class="btn btn--transparent" href="#">Оставить заявку</a>
+							<!-- /menu--><a class="btn btn--transparent modal-trigger tablet-hide" href="#" data-modal="#modalCallback">Оставить заявку</a>
+							<!-- modal callback-->
+							<div class="callback modal" id="modalCallback">
+								<div class="callback__body modal_body">
+									<div class="callback__content modal_content">
+										<div class="callback__title">Заполните форму <br>для обратной связи</div>
+										<form class="callback__form" action="#">
+											<div class="callback__row"> 
+												<div class="input input-search">
+													<input id="inptype" type="text" placeholder="Юр./Физ. лицо">
+													<div class="input__drop">
+														<ul class="input__list scrollbar-inner">
+															<li>Юр. лицо</li>
+															<li>Физ. лицо</li>
+														</ul>
+													</div>
+													<label class="input__arrow" for="inptype">
+														 <svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L22 22L42 2" stroke-width="4"/>
+</svg>
+													</label>
+												</div>
+											</div>
+											<div class="callback__row"> 
+												<div class="input"> 
+													<input type="text" placeholder="Название компании">
+												</div>
+											</div>
+											<div class="callback__row"> 
+												<div class="input"> 
+													<input type="text" placeholder="Ваше имя">
+												</div>
+											</div>
+											<div class="callback__row"> 
+												<div class="input"> 
+													<input type="text" placeholder="Город/Регион">
+												</div>
+											</div>
+											<div class="callback__row"> 
+												<div class="input"> 
+													<input type="text" placeholder="Телефон">
+												</div>
+											</div>
+											<div class="callback__row callback__row--mb52">
+												<div class="input"> 
+													<input type="text" placeholder="Email">
+												</div>
+											</div>
+											<div class="callback__row">
+												<div class="textarea"> 
+													<textarea placeholder="Задать вопрос"></textarea>
+												</div>
+											</div>
+											<div class="callback__btn"> 
+												<button class="btn btn--brown" type="submit">Оставить заявку</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- /modal callback-->
 						</div>
 					</div>
 				</div>

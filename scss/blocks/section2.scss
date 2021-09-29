@@ -78,6 +78,7 @@
     }
     &__slogan {
       font-size: 22px;
+      margin-bottom: 10px;
     }
     &__num {
       font-size: 40px;
@@ -90,6 +91,9 @@
     }
     &__list {
       padding-top: 0;
+    }
+    &__item {
+      margin-bottom: 40px;
     }
   }
   @media (max-width: $break_sm) {

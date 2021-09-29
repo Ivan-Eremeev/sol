@@ -16,9 +16,6 @@
     margin-left: 40px;
   }
   @media (max-width: $break_md) {
-    .btn {
-      display: none;
-    }
     &__container {
       padding: 15px 0;
     }

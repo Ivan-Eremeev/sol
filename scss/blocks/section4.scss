@@ -82,6 +82,9 @@
         }
       }
     }
+    &__col {
+      margin-bottom: 40px;
+    }
   }
   @media (max-width: $break_sm) {
     &__title {

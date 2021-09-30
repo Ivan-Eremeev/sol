@@ -467,6 +467,24 @@ $(document).ready(function () {
 	};
 	parallaxMove($('.js-parallaxMouse'));
 
+	// Выпадайки "О нас пишут" при наведении на кнопку
+	function dropBlockJQuery(btn) {
+		var $this = undefined,
+			drop = undefined,
+			allDrop = $('.section8__drop');
+			time = 0;
+		btn.on('mouseenter', function () {
+			console.log('dd');
+			btn.removeClass('active');
+			allDrop.fadeOut(time);
+			$this = $(this);
+			drop = $('#' + $this.data('drop'));
+			$this.addClass('active');
+			drop.fadeIn(time);
+		})
+	}
+	dropBlockJQuery($('.js-drop-btn-fade'));
+
 	// // Показать еще новости
 	// function limitBlock(wrap, newsNum) {
 	// 	if (!newsNum) {

@@ -234,6 +234,35 @@ block content
 							img(src="img/partner_2.png", alt="")
 							img(src="img/partner_3.png", alt="")
 			// /section7
+
+			// section8
+			section.section8
+				.wrapper
+					h2.title.title--center О НАС ПИШУТ
+					.section8__container
+						.section8__drop#drop_1.open
+							p Текст 1. Супер пупер вау, не знаю что сказать мне лень было искать текст, поэтому тут написано это
+						.section8__drop#drop_2
+							p Текст 2. Супер пупер вау, не знаю что сказать мне лень было искать текст, поэтому тут написано это
+						.section8__drop#drop_3
+							p Текст 3. Супер пупер вау, не знаю что сказать мне лень было искать текст, поэтому тут написано это
+						.section8__row 
+							.section8__item.js-drop-btn-fade(data-drop="drop_1").active
+								span Forbes
+							.section8__item.js-drop-btn-fade(data-drop="drop_2")
+								span Times
+							.section8__item.js-drop-btn-fade(data-drop="drop_3")
+								span Ведомости
+			// /section8
+
+			// section9
+			section.section9
+				img(src="img/sphere_4.svg", alt="").section9__sphere
+				.wrapper
+					.section9__content
+						h2.section9__title Сделайте свой бизнес доступнее с SOL — заслужите доверие каждого клиента
+						a(href="#").btn.btn--brownD Оставить заявку
+			// /section9
 			
 		include blocks/footer.pug
 

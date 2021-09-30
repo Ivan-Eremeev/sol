@@ -1,0 +1,114 @@
+.section8 {
+  padding: 65px 0 64px;
+  position: relative;
+  background-color: $blue;
+  .wrapper {
+    z-index: 5;
+  }
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 0 230px 0 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .title {
+    margin-bottom: 46px;
+  }
+  &__container {
+  }
+  &__drop {
+    display: none;
+    padding: 80px;
+    background-color: #97CFEE;
+    border-radius: 50px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 69px;
+    p {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &.open {
+      display: block;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  &__item {
+    font-size: 36px;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: '';
+      display: block;
+      width: 140px;
+      height: 70px;
+      background-image: url("data:image/svg+xml,%3Csvg width='140' height='70' viewBox='0 0 140 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M70 0L70 70C70 31.3401 101.34 -1.26785e-06 140 -2.83182e-06L70 0Z' fill='%2397CFEE'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M70 0L0 0C38.6599 0 70 31.3401 70 70L70 0Z' fill='%2397CFEE'/%3E%3C/svg%3E%0A");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translate(-50%,0);
+      opacity: 0;
+      transition: 0.3s;
+    }
+    &.active {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: $break_lg) {
+    &__drop {
+      font-size: 22px;
+    }
+    &__item {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &:before {
+      border-radius: 0 70px 0 0;
+    }
+    &__drop {
+      padding: 50px;
+      font-size: 20px;
+      margin-bottom: 34px;
+    }
+    &__item {
+      font-size: 24px;
+      &:after {
+        width: 70px;
+        height: 35px;
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__drop {
+      padding: 20px;
+      border-radius: 30px;
+      border-radius: 30px;
+      font-size: 16px;
+    }
+    &__row {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    &__item {
+      font-size: 18px;
+    }
+  }
+}

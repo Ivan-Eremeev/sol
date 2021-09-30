@@ -25,6 +25,14 @@
   }
   .slick-slide {
     margin-left: 80px;
+    img {
+      filter: grayscale(100%);
+    }
+    &.slick-center {
+      img {
+        filter: grayscale(0%);
+      }
+    }
   }
   .slick-track {
     display: flex;
@@ -78,6 +86,9 @@
     }
   }
   @media (max-width: $break_sm) {
+    &:before {
+      border-radius: 70px 0 0 70px;
+    }
     .slick-slide {
       margin-left: 20px;
     }

@@ -127,6 +127,13 @@ body {
       background-color: #EC5E39;
     }
   }
+  &--brownD {
+    background-color: #EC5E39;
+    color: #fff;
+    &:hover {
+      background-color: #EE8365;
+    }
+  }
   @media (max-width: $break_lg) {
     padding: 14px 24px;
     font-size: 16px;

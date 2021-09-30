@@ -74,16 +74,18 @@ $(document).ready(function () {
 	function slider(slider, sliderFor) {
 	  if (slider.length) {
 	    slider.slick({
-	      slidesToShow: 3, // Сколько слайдов показывать на экране
-	      slidesToScroll: 1, // Сколько слайдов пролистывать за раз
-	      dots: false, // Пагинация
-	      arrows: true, // Стрелки
+	      slidesToShow: 3,
+	      slidesToScroll: 1,
+	      arrows: true,
+	      centerMode: true,
+	      centerPadding: '0px',
+	      autoplay: true,
 	      prevArrow: '<div class="section7__prev"><svg width="20" height="35" viewBox="0 0 20 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 2L3 17.5L18.5 33" stroke-width="4"/></svg ></div>',
 	      nextArrow: '<div class="section7__next"><svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L17.5 17.5L2 33" stroke-width="4"/></svg></div>',
-	      infinite: true, // Зацикленное пролистывание
-	      swipe: true, // Перелистывание пальцем
-	      draggable: true, // Перелистывание мышью
-	      responsive: [ // Адаптация
+	      infinite: true,
+	      swipe: true,
+	      draggable: true,
+	      responsive: [
 	        {
 	          breakpoint: breakXs,
 	          settings: {
@@ -546,6 +548,24 @@ $(document).ready(function () {
 		}
 	};
 	parallaxMove($('.js-parallaxMouse'));
+
+	// Выпадайки "О нас пишут" при наведении на кнопку
+	function dropBlockJQuery(btn) {
+		var $this = undefined,
+			drop = undefined,
+			allDrop = $('.section8__drop');
+			time = 0;
+		btn.on('mouseenter', function () {
+			console.log('dd');
+			btn.removeClass('active');
+			allDrop.fadeOut(time);
+			$this = $(this);
+			drop = $('#' + $this.data('drop'));
+			$this.addClass('active');
+			drop.fadeIn(time);
+		})
+	}
+	dropBlockJQuery($('.js-drop-btn-fade'));
 
 	// // Показать еще новости
 	// function limitBlock(wrap, newsNum) {

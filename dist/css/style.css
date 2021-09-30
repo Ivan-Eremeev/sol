@@ -142,9 +142,6 @@ body {
   font-size: 21px;
   color: #353535;
 }
-body.lock {
-  position: fixed;
-}
 @media (max-width: 1400px) {
   body {
     font-size: 18px;

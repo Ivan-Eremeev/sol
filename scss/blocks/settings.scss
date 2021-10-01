@@ -93,7 +93,12 @@ body {
 .content {
   flex-grow: 1;
   &--pt {
-    padding-top: 150px;
+    padding-top: 200px;
+  }
+  @media (max-width: $break_md) {
+    &--pt {
+      padding-top: 150px;
+    }
   }
 }
 .btn {
@@ -156,11 +161,11 @@ body {
   position: relative;
   input {
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding: 0 20px;
     background: #FFFFFF;
     border: 4px solid #5689A7;
-    border-radius: 20px;
+    border-radius: 15px;
     outline: none;
     font-size: 30px;
     text-align: center;
@@ -185,7 +190,7 @@ body {
   }
   &__drop {
     width: 100%;
-    padding: 20px 0;
+    padding-top: 5px;
     position: absolute;
     z-index: 10;
     opacity: 0;
@@ -232,13 +237,13 @@ body {
   }
   @media (max-width: $break_lg) {
     input {
-      height: 50px;
+      height: 40px;
       font-size: 20px;
       border-width: 2px;
       border-radius: 10px;
     }
     &__drop {
-      padding-top: 5px;
+      padding-top: 3px;
     }
     &__list {
       border-radius: 10px;
@@ -259,7 +264,7 @@ body {
   textarea {
     display: block;
     width: 100%;
-    height: 160px;
+    height: 120px;
     padding: 20px;
     background: #FFFFFF;
     border: 4px solid #5689A7;
@@ -278,7 +283,7 @@ body {
   }
   @media (max-width: $break_lg) {
     textarea {
-      height: 100px;
+      height: 80px;
       font-size: 20px;
       border-width: 2px;
       border-radius: 10px;

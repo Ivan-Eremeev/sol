@@ -7,6 +7,7 @@
 	left: 0;
 	right: 0;
 	overflow: auto;
+	z-index: 10;
 	&_body {
 		width: 100%;
 		max-height: 100%;

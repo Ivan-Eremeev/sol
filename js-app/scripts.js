@@ -90,6 +90,17 @@ $(document).ready(function () {
 			byRow: false,
 		});
 	}
+	function matchHeaigthReinit() {
+		if ($(window).width() < breakXs) {
+			$('.section12__content h3').matchHeight({ remove: true });
+		} else {
+			$('.section12__content h3').matchHeight({
+				byRow: false,
+			});
+		}
+	}
+	matchHeaigthReinit();
+	$(window).resize(matchHeaigthReinit);
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {

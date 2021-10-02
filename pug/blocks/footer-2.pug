@@ -1,0 +1,61 @@
+// modal callback
+.callback.modal#modalCallback
+	.callback__body.modal_body
+		.callback__content.modal_content
+			.callback__title Заполните форму <br>для обратной связи
+			form(action="#").callback__form
+				.callback__row 
+					.input.input-search
+						input#inptype(type="text" placeholder="Юр./Физ. лицо")
+						.input__drop
+							ul.input__list.scrollbar-inner
+								each val in ['Юр. лицо', 'Физ. лицо']
+									li= val
+						label(for="inptype").input__arrow 
+							<svg width="44" height="25" viewBox="0 0 44 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L22 22L42 2" stroke-width="4"/>
+							</svg>
+				.callback__row 
+					.input 
+						input(type="text" placeholder="Название компании")
+				.callback__row 
+					.input 
+						input(type="text" placeholder="Ваше имя")
+				.callback__row 
+					.input 
+						input(type="text" placeholder="Город/Регион")
+				.callback__row 
+					.input 
+						input(type="text" placeholder="Телефон")
+				.callback__row.callback__row--mb52
+					.input 
+						input(type="text" placeholder="Email")
+				.callback__row
+					.textarea 
+						textarea(placeholder="Задать вопрос")
+				.callback__btn 
+					button(type="submit").btn.btn--brown Оставить заявку
+			//- .callback__close.modal_close
+// /modal callback
+
+// footer
+footer.footer.footer--2
+	.wrapper 
+		.title.title--center КОНТАКТЫ
+		.footer__row 
+			.footer__col 
+				p.footer__text NUMBER : 
+					a(href="tel:+79636758857") 7 963 675 - 88 - 57
+				p.footer__text MAIL : 
+					a(href="mailto:INFO@SOL-GOS.RU") INFO@SOL-GOS.RU
+			.footer__col 
+				.footer__social 
+					.footer__social-col 
+						a(href="#") 
+							img(src="img/fb.svg", alt="")
+						a(href="#") 
+							img(src="img/yt-btn.svg", alt="")
+					.footer__social-col 
+						a(href="#") 
+							img(src="img/sk.png", alt="")
+// /footer

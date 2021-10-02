@@ -172,6 +172,11 @@ $(document).ready(function () {
 			byRow: false,
 		});
 	}
+	if ($('.section13__tr').length) {
+		$('.section13__tr').matchHeight({
+			byRow: false,
+		});
+	}
 	function matchHeaigthReinit() {
 		if ($(window).width() < breakXs) {
 			$('.section12__content h3').matchHeight({ remove: true });

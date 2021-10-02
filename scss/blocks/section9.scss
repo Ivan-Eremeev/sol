@@ -36,6 +36,15 @@
     bottom: -400px;
     z-index: 4;
   }
+  &--2 {
+    &:before {
+      background-color: $blue;
+    }
+    .section9__sphere {
+      width: 45%;
+      top: 50px;
+    }
+  }
   @media (max-width: $break_lg) {
     &__title {
       font-size: 30px;
@@ -53,10 +62,23 @@
     &:before {
       border-radius: 0 70px 0 70px;
     }
+    &--2 {
+      .section9__sphere {
+        width: 70%;
+        top: 20px;
+        left: -100px;
+      }
+    }
   }
   @media (max-width: $break_xs) {
     &__title {
       font-size: 20px;
+    }
+    &--2 {
+      .section9__sphere {
+        width: 90%;
+        left: -100px;
+      }
     }
   }
 }

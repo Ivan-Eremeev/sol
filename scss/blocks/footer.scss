@@ -40,6 +40,10 @@
       margin: 10px 0;
     }
   }
+  &--2 {
+    background-color: $blueD;
+    z-index: 5;
+  }
   @media (max-width: $break_sm) {
     padding: 40px 0 20px;
     .title {

@@ -112,11 +112,42 @@ block content
 
 			// section13
 			section.section13
-				h2.title.title--center ПОЧЕМУ ЭТО ВЫГОДНО?
-			
+				.wrapper
+					h2.title.title--center ПОЧЕМУ ЭТО ВЫГОДНО?
+					.section13__container
+						.section13__table
+							.section13__tr 
+								.section13__th 
+								.section13__th Штатный сурдо переводчик
+								.section13__th SOL
+							.section13__tr 
+								.section13__td Экономия
+								.section13__td нет
+								.section13__td использование SOL в 10 раз дешевле собственного переводчика, в пересчете на год
+							.section13__tr 
+								.section13__td Обслуживание
+								.section13__td нет
+								.section13__td Отвечаем в течение одной минуты 24/7 по любым вопросам
+							.section13__tr 
+								.section13__td Персонализированный сервис
+								.section13__td нет
+								.section13__td переводчики SOL подстраиваются под график работы любой организации.
+							.section13__tr 
+								.section13__td Опыт в регионах
+								.section13__td нет
+								.section13__td переводчики SOL знают как адаптироваться под локальные диалекты и работают по инструкциям, которые реально помогают.
 			// /section13
+
+			// section9
+			section.section9.section9--2
+				img(src="img/sphere_2.svg", alt="").section9__sphere
+				.wrapper
+					.section9__content
+						h2.section9__title Сделайте свой бизнес доступнее с SOL — заслужите доверие каждого клиента
+						a(href="#").btn.btn--brownD Оставить заявку
+			// /section9
 			
-		include blocks/footer.pug
+		include blocks/footer-2.pug
 
 block js-libs
 	script(src="js/libs/jquery.min.js")

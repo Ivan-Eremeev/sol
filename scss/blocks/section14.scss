@@ -1,5 +1,6 @@
 .section14 {
   padding: 77px 0 0;
+  position: relative;
   .wrapper {
     max-width: 1260px;
   }
@@ -31,6 +32,13 @@
   }
   .btn {
     font-size: 30px;
+  }
+  &__sphere {
+    width: 840px;
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    z-index: 2;
   }
   @media (max-width: $break_lg) {
     .title {

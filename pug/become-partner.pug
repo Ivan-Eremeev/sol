@@ -1,0 +1,96 @@
+extends blocks/base.pug
+
+block title 
+	title Стать партнером
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content.content--pt
+			
+			// section10
+			section.section10
+				img(src="img/sphere_5.svg", alt="").section10__sphere
+				.wrapper
+					h1.title.title--center Лицензионная подписка <br>на сервис SOL 
+				.section10__body 
+					.wrapper
+						.section10__row 
+							.section10__content 
+								.section10__text 
+									p Начните подлючать своих клиентов к SOL на выгодных партнерских условиях и обеспечивать доступную среду для инвалидов по слуху вместе с нами!
+								.btn.btn--brownD.modal-trigger(data-modal="#modalCallback") Оставить заявку
+							.section10__img 
+								img(src="img/image_1.png", alt="")
+			// /section10
+
+			// section15
+			section.section15
+				.wrapper 
+					h2.title.title--center ПОЧЕМУ ЭТО ВЫГОДНО
+					.row 
+						.section12__col 
+							.section12__item
+								.section12__icon 
+									img(src="img/hand_1.svg", alt="")
+								.section12__content 
+									h3 Обеспечение доступности веб ресурсов
+									p Виджет отображается в форме кнопки обратного звонка на сайте
+						.section12__col 
+							.section12__item
+								.section12__icon 
+									img(src="img/hand_2.svg", alt="")
+								.section12__content 
+									h3 120 минут сурдоперевода
+									p Действуют в течение 1 года
+						.section12__col 
+							.section12__item
+								.section12__icon 
+									img(src="img/hand_3.svg", alt="")
+								.section12__content 
+									h3 Запись и хранение переводов
+									p Возможна запись сессий и их хранение до 30 суток
+						.section12__col 
+							.section12__item
+								.section12__icon 
+									img(src="img/hand_4.svg", alt="")
+								.section12__content 
+									h3 Техническая поддержка
+									p Обеспечение технической поддержки
+			// /section15
+
+			include blocks/section-9.pug
+			
+		include blocks/footer-2.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

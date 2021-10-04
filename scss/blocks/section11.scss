@@ -69,6 +69,14 @@
       left: 47%;
     }
   }
+  &__sphere {
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    bottom: -400px;
+    z-index: 3;
+    transform: translate(-50%,0);
+  }
   @media (max-width: $break_lg) {
     &__text {
       font-size: 20px;

@@ -1,0 +1,33 @@
+.section15 {
+  padding: 80px 0;
+  background-color: $blue;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 0 230px 0 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .title {
+    margin-bottom: 70px;
+  }
+  .row {
+    margin-left: -50px;
+  }
+  @media (max-width: $break_lg) {
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &:before {
+      border-radius: 0 70px 0 0;
+    }
+  }
+}

@@ -4,14 +4,16 @@
     margin-bottom: 15px;
   }
   &__body {
-    padding: 72px 0;
     background-color: $blue;
     border-radius: 230px 0 0 230px;
   }
   &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    min-height: 600px;
+    padding: 72px 0;
   }
   &__content {
     max-width: 920px;
@@ -37,7 +39,7 @@
     width: 413px;
     flex-shrink: 0;
     position: absolute;
-    bottom: -212px;
+    bottom: -150px;
     right: -283px;
   }
   &__sphere {
@@ -55,6 +57,9 @@
     }
   }
   @media (max-width: $break_lg) {
+    &__row {
+      min-height: 400px;
+    }
     &__img {
       width: 300px;
     }
@@ -84,6 +89,7 @@
     }
     &__row {
       flex-wrap: wrap;
+      min-height: 1px;
     }
     &__content {
       max-width: none;

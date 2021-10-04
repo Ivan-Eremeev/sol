@@ -78,6 +78,12 @@
       width: 36%;
     }
   }
+  &__sphere {
+    position: absolute;
+    right: -200px;
+    bottom: -200px;
+    z-index: 3;
+  }
   @media (max-width: $break_lg) {
     &__th {
       font-size: 22px;

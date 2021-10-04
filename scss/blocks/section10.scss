@@ -56,7 +56,6 @@
   @media (max-width: $break_lg) {
     &__img {
       width: 300px;
-      bottom: -150px;
     }
     &__body {
       padding-left: 50px;
@@ -66,8 +65,10 @@
       margin-right: 320px;
     }
     &__text {
+      margin-bottom: 20px;
       h3 {
         font-size: 20px;
+        margin-bottom: 10px;
       }
       p {
         font-size: 20px;

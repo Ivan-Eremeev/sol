@@ -1,0 +1,57 @@
+.section14 {
+  padding: 77px 0 0;
+  .wrapper {
+    max-width: 1260px;
+  }
+  .title {
+    margin-bottom: 120px;
+  }
+  .section5__col {
+    padding-left: 30px;
+    &:hover {
+      .section5__item {
+        background-color: $blue;
+      }
+    }
+  }
+  .section5__item {
+    padding: 40px 25px 30px;
+    background-color: $blue;
+  }
+  .section5__title {
+    font-size: 21px;
+  }
+  .section5__text {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .row {
+    margin-left: -30px;
+  }
+  .btn {
+    font-size: 30px;
+  }
+  @media (max-width: $break_lg) {
+    .title {
+      margin-bottom: 80px;
+    }
+    .row {
+      margin-left: -20px;
+    }
+    .section5__col {
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    .section5__title {
+      font-size: 20px;
+    }
+    .section5__text {
+      font-size: 18px;
+    }
+    .btn {
+      font-size: 20px;
+    }
+  }
+}

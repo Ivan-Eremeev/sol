@@ -89,7 +89,7 @@
   }
   @media (max-width: $break_lg) {
     &__container {
-      border-radius: 70px;
+      border-radius: 200px;
       padding: 30px 20px;
     }
     &__content {
@@ -115,6 +115,9 @@
     }
   }
   @media (max-width: $break_sm) {
+    &__container {
+      border-radius: 70px;
+    }
     &__content {
       h3 {
         font-size: 20px;

@@ -1,0 +1,184 @@
+extends blocks/base.pug
+
+block title 
+	title Лицензионная подписка
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content.content--pt
+			
+			// section10
+			section.section10
+				img(src="img/sphere_5.svg", alt="").section10__sphere
+				.wrapper
+					h1.title.title--center Лицензионная подписка <br>на сервис SOL 
+				.section10__body 
+					.wrapper
+						.section10__row 
+							.section10__content 
+								.section10__text 
+									p Обеспечивает удалённый перевод на язык жестов и обратно по видеосвязи для любой организации или компании, оказывающие услуги населению.
+									p Госучреждения, отделения банков, аптеки, больницы, объекты культуры - в 3 странах уже пользуютсянашим сервисом.
+								.btn.btn--brownD.modal-trigger(data-modal="#modalCallback") Оставить заявку
+							.section10__img 
+								img(src="img/image_1.png", alt="")
+			// /section10
+
+			// section11
+			section.section11
+				.wrapper
+					h2.title.title--center ПРИОБРЕТЕНИЕ ЛИЦЕНЗИИ
+					.row 
+						.section11__col 
+							.section11__item
+								.section11__text Подайте заявку и мы свяжемся с вами для уточнения деталей
+								.section11__num 1
+						.section11__col 
+							.section11__item
+								.section11__text После приобретения и подключения лицензии вам выдаются доступы к личному кабинету
+								.section11__num 2
+						.section11__col 
+							.section11__item
+								.section11__text В течение действия лицензии вы получаете доступ к онлайн сервису
+								.section11__num 3
+						img(src="img/arrow_1.svg", alt="").section11__arrow.section11__arrow--1
+						img(src="img/arrow_2.svg", alt="").section11__arrow.section11__arrow--2
+			// /section11
+
+			// section12
+			section.section12
+				.section12__container
+					.wrapper
+						h2.title.title--center ЧТО ВХОДИТ В БАЗОВУЮ ЛИЦЕНЗИЮ
+						.row 
+							.section12__col 
+								.section12__item
+									.section12__icon 
+										img(src="img/hand_1.svg", alt="")
+									.section12__content 
+										h3 Обеспечение доступности веб ресурсов
+										p Виджет отображается в форме кнопки обратного звонка на сайте
+							.section12__col 
+								.section12__item
+									.section12__icon 
+										img(src="img/hand_2.svg", alt="")
+									.section12__content 
+										h3 900 минут сурдоперевода
+										p Действуют в течение 1 года
+							.section12__col 
+								.section12__item
+									.section12__icon 
+										img(src="img/hand_3.svg", alt="")
+									.section12__content 
+										h3 Запись и хранение переводов
+										p Возможна запись сессий и их хранение до 30 суток
+							.section12__col 
+								.section12__item
+									.section12__icon 
+										img(src="img/hand_4.svg", alt="")
+									.section12__content 
+										h3 Техническая поддержка
+										p Обеспечение технической поддержки
+						.section12__priceblock 
+							.section12__priceitem.modal-trigger(data-modal="#modalCallback")
+								.section12__name Базовая лицензия
+								.section12__price Цена: 59 000 ₽ 
+								.btn.btn--brown Оставить заявку
+			// /section12
+
+			// section14
+			section.section14
+				.wrapper
+					h2.title.title--center ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ <br>К ЛИЦЕНЗИИ
+					.row
+						.section5__col
+							.section5__item 
+								h3.section5__title Горячая линия с сурдопереводом и интеграция с IP-телефонией и сайтом
+								.section5__text 
+									p Неслышащий через кнопку на сайте вызывает сурдопереводчика и сотрудника колл-центра, после чего общается с переводчиком по видеосвязи, а он с сотрудником колл-центра - по ауддиосвязи.
+									p Горячие линии, колл-центры, работающие с широкими слоями населения. Банковские колл-центры, Ситуационные центры, мобильные операторы и многие другие
+								a(href="#").btn.btn--brown 67.000 ₽
+						.section5__col
+							.section5__item 
+								h3.section5__title Лицензия на допольнительный офис обслуживания
+								.section5__text.section5__text--flex
+									p Лицензия необходима в случае потребности подключения нескольких офисов обслуживания.
+									p 
+										strong Важно!
+										| В лицензию не входит пакет времени сурдоперевода. Она подключается к пакету времени базовой лицензии.
+								a(href="#").btn.btn--brown 10.000 ₽
+						.section5__col
+							.section5__item 
+								h3.section5__title Пакет дополнительного времени 300 минут
+								.section5__text
+									p Приобретается дополнительно в случае:
+									p 1.Необходимо увеличить пакет времени в базовой лицензии.
+									p 2.Приобретается в случае окончания пакета времени Базовой лицензии если срок действия лицензии еще не закончен.
+								a(href="#").btn.btn--brown 15.000 ₽
+
+			// /section14
+
+			// section13
+			section.section13
+				.wrapper
+					h2.title.title--center ПОЧЕМУ ЭТО ВЫГОДНО?
+					.section13__container
+						.section13__table
+							.section13__tr 
+								.section13__th 
+								.section13__th Штатный сурдо переводчик
+								.section13__th SOL
+							.section13__tr 
+								.section13__td Экономия
+								.section13__td нет
+								.section13__td использование SOL в 10 раз дешевле собственного переводчика, в пересчете на год
+							.section13__tr 
+								.section13__td Обслуживание
+								.section13__td нет
+								.section13__td Отвечаем в течение одной минуты 24/7 по любым вопросам
+							.section13__tr 
+								.section13__td Персонализированный сервис
+								.section13__td нет
+								.section13__td переводчики SOL подстраиваются под график работы любой организации.
+							.section13__tr 
+								.section13__td Опыт в регионах
+								.section13__td нет
+								.section13__td переводчики SOL знают как адаптироваться под локальные диалекты и работают по инструкциям, которые реально помогают.
+			// /section13
+
+			include blocks/section-9.pug
+			
+		include blocks/footer-2.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

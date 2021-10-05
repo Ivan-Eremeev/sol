@@ -55,7 +55,7 @@
 // $('.your-slider').slick('setPosition') // Переотрисовка слайдера. Например для использования в табах
 
 // Slick Slider
-function slider(slider, sliderFor) {
+function slider(slider) {
   if (slider.length) {
     slider.slick({
       slidesToShow: 3,
@@ -81,3 +81,20 @@ function slider(slider, sliderFor) {
   }
 }
 slider($('#slickSlider'));
+
+// Slick Slider
+function slider2(slider) {
+  if (slider.length) {
+    slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<div class="section16__prev"><svg width="29" height="39" viewBox="0 0 29 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 4L7 19.5L26 35" stroke-width="8"/></svg></div>',
+      nextArrow: '<div class="section16__next"><svg width="29" height="39" viewBox="0 0 29 39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4L22 19.5L3 35" stroke-width="8"/></svg ></div>',
+      infinite: true,
+      swipe: true,
+      draggable: true,
+    });
+  }
+}
+slider2($('#slickSlider2'));

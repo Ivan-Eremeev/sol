@@ -1,0 +1,86 @@
+.section17 {
+  padding: 74px 0 60px;
+  background-color: $blue;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 0 230px 0 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .wrapper {
+    max-width: 840px;
+  }
+  .title {
+    margin-bottom: 110px;
+  }
+  &__col {
+    @include col(6);
+    @include col-xs(12);
+    margin-bottom: 29px;
+  }
+  &__link {
+    display: inline-flex;
+    font-size: 36px;
+    color: $black;
+    svg {
+      flex-shrink: 0;
+      margin-right: 50px;
+      fill: $black;
+      transition: 0.3s;
+    }
+    span {
+      padding-top: 3px;
+    }
+    &:hover {
+      color: $blueT;
+      svg {
+        fill: $blueT;
+      }
+    }
+  }
+  @media (max-width: $break_lg) {
+    .title {
+      margin-bottom: 80px;
+    }
+    &__link {
+      font-size: 26px;
+      span {
+        padding-top: 8px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding: 50px 0;
+    .title {
+      margin-bottom: 50px;
+    }
+    &:before {
+      border-radius: 0 70px 0 0;
+    }
+    &__col {
+      margin-bottom: 3px;
+    }
+    &__link {
+      font-size: 22px;
+      svg {
+        width: 40px;
+        margin-right: 30px;
+      }
+      span {
+        padding-top: 10px;
+      }
+    }
+  }
+  @media (max-width: $break_xs) {
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+}

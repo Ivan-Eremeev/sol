@@ -1,0 +1,32 @@
+.section19 {
+  padding-bottom: 36px;
+  .wrapper {
+    max-width: 1030px;
+  }
+  .title {
+    margin-bottom: 60px;
+  }
+  &__text {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  &__block {
+    margin-bottom: 45px;
+  }
+  @media (max-width: $break_lg) {
+    .title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__block {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

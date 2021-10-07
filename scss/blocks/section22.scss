@@ -1,0 +1,43 @@
+.section22 {
+  padding: 66px 0 100px;
+  margin-bottom: -50px;
+  background-color: #fff;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background-color: $blueL;
+    border-radius: 0 230px 230px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  &__sphere {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: 3;
+  }
+  @media (max-width: $break_md) {
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding: 50px 0 70px;
+    &:before {
+      border-radius: 0 70px 70px 0;
+    }
+  }
+  @media (max-width: $break_xs) {
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+}

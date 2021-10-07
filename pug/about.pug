@@ -1,0 +1,146 @@
+extends blocks/base.pug
+
+block title 
+	title О компании
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content.content--pt
+			
+			// section19
+			section.section19
+				.wrapper
+					h1.title.title--center О КОМПАНИИ
+					.section19__text 
+						.section19__block
+							p Язык глухого клиента – это жестовый язык. 
+							p Он отличается от устного и письменного языка слышащего человека. 
+							p Именно поэтому глухие люди испытывают трудности в общении со слышащими людьми через письмо,  и наоборот, слышащим людям сложно понимать специфический порядок слов, в котором пишут глухие.
+						.section19__block
+							p Глухие клиенты через сайт нажимают на кнопку “позвонить через сурдоперевочдика”
+							p При совершении звонка, вызов поступает удаленному сурдопереводчику через видео-канал (сервер SOL, протокол WebRTC);
+							p После приема звонка сурдопереводчиком, автоматически осуществляется звонок в контакт-центр компании
+							p 
+			// /section19
+
+			// section20
+			section.section20
+				img(src="img/sphere_3.svg", alt="").section20__sphere
+				.wrapper
+					h2.title.title--center АДРЕС
+					.section20__body 
+						.section20__map 
+							#yandexMap(data-center="[55.692318069051986,37.347485]" data-zoom="16" data-point="[55.692318069051986,37.347485]" data-point-text="ООО 'ИТ-В'")
+						.section20__text 
+							p Головная организация: <br>ООО "ИТ-В"
+							p 
+								a(href="tel:+74951182625") +7 495 118-26-25
+			// /section20
+
+			// section21
+			section.section21
+				.wrapper
+					h2.title.title--center ПРЕДСТАВИТЕЛЬСТВА
+					.section21__list 
+						.section21__item 
+							.section21__img 
+								img(src="img/office.svg", alt="")
+							.section21__text 
+								h3 Санкт-Петербург
+								p Партнер: АНО "НЦ" АСИ 
+								p 8-800-700-08-29
+						.section21__item 
+							.section21__img 
+								img(src="img/office.svg", alt="")
+							.section21__text 
+								h3 Алматы (Казахстан)
+								p Партнер: ТОО "Surdo-Online "Казахстан" 
+								p +7 (727) 34 66 222 вн. 222
+						.section21__item 
+							.section21__img 
+								img(src="img/office.svg", alt="")
+							.section21__text 
+								h3 Сургут
+								p Партнер: ООО "Сервисные Технологии" 
+								p 8(3462)500-556,500-452 
+								p e-mail:bst@gk-sm.com
+						.section21__item 
+							.section21__img 
+								img(src="img/office.svg", alt="")
+							.section21__text 
+								h3 Ташкент (Узбекистан)
+								p Партнер: ООО "IT ASIA"+998951450418
+			// /section21
+
+			// section22
+			section.section22
+				img(src="img/sphere_6.svg", alt="").section22__sphere
+				.wrapper
+					h2.title.title--center ПАРТНЕРЫ
+					.section21__list 
+						.section21__item 
+							.section21__img 
+								img(src="img/partner.svg", alt="")
+							.section21__text 
+								h3 Санкт-Петербург
+								p Партнер: АНО "НЦ" АСИ 
+								p 8-800-700-08-29
+						.section21__item 
+							.section21__img 
+								img(src="img/partner.svg", alt="")
+							.section21__text 
+								h3 Алматы (Казахстан)
+								p Партнер: ТОО "Surdo-Online "Казахстан" 
+								p +7 (727) 34 66 222 вн. 222
+						.section21__item 
+							.section21__img 
+								img(src="img/partner.svg", alt="")
+							.section21__text 
+								h3 Сургут
+								p Партнер: ООО "Сервисные Технологии" 
+								p 8(3462)500-556,500-452 
+								p e-mail:bst@gk-sm.com
+						.section21__item 
+							.section21__img 
+								img(src="img/partner.svg", alt="")
+							.section21__text 
+								h3 Ташкент (Узбекистан)
+								p Партнер: ООО "IT ASIA"+998951450418
+			// /section22
+
+			include blocks/section-9.pug
+			
+		include blocks/footer-2.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

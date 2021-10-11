@@ -1,0 +1,32 @@
+.section24 {
+  padding: 10px 0 120px;
+  background-color: $blue;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 0 0 0 230px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .wrapper {
+    max-width: 1084px;
+  }
+  .title {
+    margin-bottom: 90px;
+  }
+  @media (max-width: $break_sm) {
+    padding-bottom: 50px;
+    .title {
+      margin-bottom: 30px;
+    }
+    &:before {
+      border-radius: 0 0 0 70px;
+    }
+  }
+}

@@ -118,11 +118,12 @@ $(document).ready(function () {
 	// libs-settings/tinyscrollbar-settings.js
 	// libs-settings/tooltipster-settings.js
 	// YandexMap
-	ymaps.ready(function () {
-	  if ($('#yandexMap').length) {
+	if ($('#yandexMap').length) {
+	  ymaps.ready(function () {
 	    initYandexMap();
-	  }
-	});
+	  });
+	}
+	
 	function initYandexMap() {
 	  var myMap,
 	      mapCenter = $('#yandexMap').data('center'),
@@ -224,21 +225,25 @@ $(document).ready(function () {
 			byRow: false,
 		});
 	}
-	function matchHeaigthReinit() {
-		if ($(window).width() < breakXs) {
-			if ($('.section12__content h3').length) {
-				$('.section12__content h3').matchHeight({ remove: true });
+	function matchHeaigthReinit(block, breakPoint) {
+		if ($(window).width() < breakPoint) {
+			if (block.length) {
+				block.matchHeight({ remove: true });
 			}
 		} else {
-			if ($('.section12__content h3').length) {
-				$('.section12__content h3').matchHeight({
+			if (block.length) {
+				block.matchHeight({
 					byRow: false,
 				});
 			}
 		}
 	}
-	matchHeaigthReinit();
-	$(window).resize(matchHeaigthReinit);
+	matchHeaigthReinit($('.section12__content h3'), breakXs);
+	matchHeaigthReinit($('.section23__list'), breakXs);
+	$(window).resize(function () {
+		matchHeaigthReinit($('.section12__content h3'), breakSm);
+		matchHeaigthReinit($('.section23__list'), breakSm);
+	});
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {

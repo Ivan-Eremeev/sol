@@ -1,9 +1,10 @@
 // YandexMap
-ymaps.ready(function () {
-  if ($('#yandexMap').length) {
+if ($('#yandexMap').length) {
+  ymaps.ready(function () {
     initYandexMap();
-  }
-});
+  });
+}
+
 function initYandexMap() {
   var myMap,
       mapCenter = $('#yandexMap').data('center'),

@@ -169,14 +169,14 @@ $(document).ready(function () {
 				over.on('click', menuClose);
 				close.on('click', menuClose);
 				function menuOpen() { // Открывание меню
-					body.addClass('lock').css('padding-right', scrollbarWidth);
+					body.addClass('lock');
 					menuBtn.addClass('is-active');
 					setTimeout(() => {
 						$this.addClass('open');
 					}, 200);
 				}
 				function menuClose() { // Закрывание меню
-					body.removeClass('lock').css('padding-right', 0);
+					body.removeClass('lock');
 					$this.removeClass('open');
 					menuBtn.removeClass('is-active');
 				}

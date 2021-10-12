@@ -23,17 +23,6 @@
 	&__btn {
 		display: none;
 	}
-	&__child {
-		&:hover {
-			> a {
-				color: $blueT;
-			}
-			.menu__sublist {
-				opacity: 1;
-				visibility: visible;
-			}
-		}
-	}
 	&__sublist {
 		padding: 28px;
 		background-color: #97CFEE;
@@ -62,6 +51,22 @@
 			left: 10px;
 		}
 	}
+	&__sphere {
+		display: none;
+	}
+	@media (min-width: $break_md + 1) {
+		&__child {
+			&:hover {
+				> a {
+					color: $blueT;
+				}
+				.menu__sublist {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
 	@media (max-width: $break_md) {
 		&__nav {
 			width: 100%;
@@ -76,6 +81,8 @@
 		}
 		&__list {
 			display: block;
+			position: relative;
+			z-index: 2;
 			li {
 
 			}
@@ -91,6 +98,15 @@
 			visibility: visible;
 			opacity: 1;
 			background-color: #fff;
+			position: relative;
+			a {
+				&:hover {
+					color: $blueT;
+				}
+			}
+			svg {
+				display: none;
+			}
 		}
 		&__btn {
 			display: inline-block;
@@ -153,6 +169,14 @@
 					display: block;
 				}
 			}
+		}
+		&__sphere {
+			display: block;
+			position: absolute;
+			bottom: 20px;
+			right: -100px;
+			width: 500px;
+			max-width: none;
 		}
 	}
 }

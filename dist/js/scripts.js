@@ -12,8 +12,6 @@ $(document).ready(function () {
 			breakSm = 769,
 			breakXs = 500;
 	
-	// Подключение настроек плагинов. Использовать "//=" перед строкой пути
-	// libs-settings/fancybox_settings.js
 	// Slick Slider
 	// function slider(slider,sliderFor) {
 	//   if (slider.length) {
@@ -114,9 +112,6 @@ $(document).ready(function () {
 	  }
 	}
 	slider2($('#slickSlider2'));
-	// libs-settings/fullpage_settings.js
-	// libs-settings/tinyscrollbar-settings.js
-	// libs-settings/tooltipster-settings.js
 	// YandexMap
 	if ($('#yandexMap').length) {
 	  ymaps.ready(function () {
@@ -154,8 +149,6 @@ $(document).ready(function () {
 	  // Размещение геообъекта на карте.
 	  myMap.geoObjects.add(myGeoObject);
 	}
-	// libs-settings/google-map-settings.js
-	// mailto-ajax.js
 
 	// Запрет перехода по ссылкам с хэшем
 	$('a[href="#"]').click(function(e) {
